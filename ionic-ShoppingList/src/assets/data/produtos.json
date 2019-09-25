@@ -1,0 +1,19 @@
+[
+    {
+      "uuid": "f73e322d-d8b3-4fb1-83cd-0cc4a5bec8de",
+      "nome": "Leite Meio Gordo",
+      "imagem": "https://media.continente.pt/Sonae.eGlobal.Presentation.Web.Media/media.axd?resourceSearchType=2&resource=ProductId=2210946(eCsf$RetekProductCatalog$MegastoreContinenteOnline$Continente)&siteId=1&channelId=1&width=512&height=512&defaultOptions=1",
+      "quantidade": 2,
+      "unidade": "1 litro",
+      "obtido": true
+    },
+
+    {
+      "uuid": "11ca7123-ce65-4b8c-9811-abd7ac169aae",
+      "nome": "Aveia Flocos Finos",
+      "imagem": "https://mambo.vteximg.com.br/arquivos/ids/161324/7891000102626_aveiaem-flocos-finos-graos-nobres-Nestle-170g_02.jpg?v=635541793022070000",
+      "quantidade": 1,
+      "unidade": "170 gramas",
+      "obtido": true
+    }
+]

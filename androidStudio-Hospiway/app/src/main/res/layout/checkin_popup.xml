@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.hospitalapp.CheckInPopUp">
+
+
+            <EditText
+                android:id="@+id/numSenha"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:padding="16dp"
+                android:hint="Numero da senha"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cor da senha"
+                android:padding="16dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <Spinner
+                android:id="@+id/corSenha"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/doneButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@color/checkinButtonColor"
+                android:onClick="concludeCheckIn"
+                android:text="Concluir"/>
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@color/colorAccent"
+                android:onClick="cancelCheckIn"
+                android:text="Cancelar"/>
+
+</LinearLayout>

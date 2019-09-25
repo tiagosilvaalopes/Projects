@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">HospiWay</string>
+    <string name="activity_hospital_list_name">Hospital</string>
+    <string name="activity_hospital_webSite">WebSite</string>
+    <string name="activity_hospital_address">Address</string>
+    <string name="activity_hospital_mail">Email</string>
+    <string name="activity_hospital_address_placeholder">Rua prof. Egas Moniz</string>
+    <string name="activity_hospital_distance_placeholder">50</string>
+    <string name="activity_hospital_use_placeholder">5</string>
+    <string name="text_view_add_hospital_name">Name</string>
+    <string name="text_view_add_hospital_phone">Phone</string>
+    <string name="text_view_hospital_home">Home</string>
+    <string name="text_view_hospital_map">Map</string>
+
+    <string name="text_view_hospital_history">History</string>
+    <string name="text_view_hospital_search">Search</string>
+    <string name="text_view_hospital_distance">Distance</string>
+    <string name="text_view_hospital_wait_general">Tempo de espera geral</string>
+    <string name="text_view_hospital_wait_obs">Tempo de espera obstetricia</string>
+    <string name="text_view_hospital_wait_ped">Tempo de espera pediatria</string>
+    <string name="text_view_hospital_checkIn">Check In</string>
+    <string name="text_view_hospital_way">On the Way</string>
+    <string name="text_view_hospital_checkOut">Check Out</string>
+    <string name="text_view_add_remaining_fields">Add remaining fields and button …</string>
+    <string name="text_view_hospital_list_item_name_placeholder">Santa Maria</string>
+    <string name="text_view_hospital_visitor_list_item_name_placeholder">Santa Maria</string>
+    <string name="text_view_hospital_no_hospital_checkedin">No hospital checked-in</string>
+    <string name="text_view_hospital_list_item_phone_placeholder">965124879</string>
+    <string name="activity_visitor_entry_placeholder"> 8</string>
+    <string name="activity_visitor_exit_placeholder"> 8</string>
+    <string name="activity_visitor_total_placeholder"> 8</string>
+    <string name="text_emergency_degree">Grau de emergencia</string>
+    <string name="text_emergency_type">Tipo de emergencia</string>
+    <string name="text_view_entry_time">Chegada:</string>
+    <string name="text_view_exit_time">Saida:</string>
+    <string name="text_view_total_time">Tempo Total:</string>
+
+
+    <string-array name="array_urgency_degree">
+        <item>Grave</item>
+        <item>Nao grave</item>
+    </string-array>
+
+    <string-array name="array_urgency_type">
+        <item>Geral</item>
+        <item>Pediatria</item>
+        <item>Obstetrícia</item>
+    </string-array>
+
+    <string-array name="array_cor_senha">
+        <item>Azul</item>
+        <item>Verde</item>
+        <item>Amarelo</item>
+        <item>Laranja</item>
+        <item>Vermelho</item>
+    </string-array>
+    <string name="title_activity_hospital_maps">Map</string>
+</resources>

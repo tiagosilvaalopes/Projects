@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Adicionar</ion-title>
+  </ion-toolbar>
+  <ion-fab routerLink="/homepage" horizontal=end vertical=top>
+    <ion-button fill="clear">
+      <ion-icon name="close"></ion-icon>
+    </ion-button>
+  </ion-fab>
+</ion-header>
+
+<ion-content>
+    <form #produtoForm="ngForm" (ngSubmit)="saveProduto(produtoForm)">
+        <ion-item>
+          <ion-icon name="basket" slot="start"> </ion-icon>
+          <ion-label color="primary">Nome</ion-label>
+          <ion-input name="nome" type="text" placeholder="Banana da Madeira" ngModel required></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-icon name="image" slot="start"> </ion-icon>
+          <ion-label color="primary">Imagem</ion-label>
+          <ion-input name="imagem" type="text" placeholder="https://..." ngModel required></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-icon name="stats" slot="start"> </ion-icon>
+          <ion-label color="primary">Quantidade</ion-label>
+          <ion-input name="quantidade" type="number" placeholder="6" ngModel required pattern="\d*$"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-icon name="information" slot="start"> </ion-icon>
+          <ion-label color="primary">Unidade</ion-label>
+          <ion-input name="unidade" type="text" placeholder="450 gramas"></ion-input>
+        </ion-item>
+
+        <div padding>
+            <ion-button size="large" type="submit" [disabled]="produtoForm.invalid" expand="block">Adicionar</ion-button>
+        </div>
+    </form>
+
+</ion-content>

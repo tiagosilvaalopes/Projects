@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Lista de Compras
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab routerLink="/adicionar" routerDirection=forward horizontal=end vertical=bottom>
+    <ion-fab-button fill="clear">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-list>
+    <ion-searchbar (ionChange)="onSearchInputChanged($event)"></ion-searchbar>
+    <ion-item-sliding *ngFor="let produto of produtos">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="{{produto.imagem}}">
+        </ion-thumbnail>
+        <ion-label text-wrap>
+          <ion-text>
+            <h2>
+              {{produto.nome}}
+            </h2>
+          </ion-text>
+          <ion-text>
+              <p>
+                Quantidade: {{produto.quantidade}} 
+                <br>
+                {{produto.unidade}}
+              </p>
+            </ion-text>
+        </ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="produto.obtido"></ion-checkbox>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option color="danger" (click)="remove(produto)">
+          <ion-icon name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

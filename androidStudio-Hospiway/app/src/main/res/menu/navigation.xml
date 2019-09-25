@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tab_navigation_home"
+        android:icon="@drawable/home"
+        android:title="@string/text_view_hospital_home" />
+
+    <item
+        android:id="@+id/tab_navigation_search"
+        android:icon="@drawable/magnify"
+        android:title="@string/text_view_hospital_search" />
+
+    <item
+        android:id="@+id/tab_navigation_history"
+        android:icon="@drawable/file_document_edit_outline"
+        android:title="@string/text_view_hospital_history" />
+
+    <item
+        android:id="@+id/tab_navigation_map"
+        android:icon="@drawable/map"
+        android:title="@string/text_view_hospital_map" />
+
+    <item
+        android:id="@+id/tab_navigation_current_hospital"
+        android:icon="@drawable/ic_local_hospital_black_24dp"
+        android:title="Current Hospital" />
+
+
+
+</menu>

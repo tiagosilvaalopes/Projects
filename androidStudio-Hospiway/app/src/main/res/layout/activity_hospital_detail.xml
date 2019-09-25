@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hospitalapp.HospitalDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardViewMovieDetailCover"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="@dimen/medium_margin">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/textViewHospitalDetailName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_view_hospital_list_item_name_placeholder"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:ignore="MissingConstraints"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:textSize="16dp"
+                        />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewMovieDetailMore"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/cardViewMovieDetailCover"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:cardCornerRadius="4dp"
+                android:layout_margin="@dimen/medium_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/medium_margin">
+
+                    <TextView
+                        android:id="@+id/textViewHospitalDetailPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_view_add_hospital_phone"
+                        android:onClick="openPhoneExternalPage" />
+                    <TextView
+                        android:id="@+id/textViewHospitalPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:onClick="openPhoneExternalPage" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider"
+                        android:layout_marginVertical="@dimen/small_margin"/>
+
+                    <TextView
+                        android:id="@+id/textViewHospitalDetailAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_hospital_address"
+                        android:onClick="openAddressExternalPage"
+                        />
+                    <TextView
+                        android:id="@+id/textViewHospitalAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:onClick="openAddressExternalPage"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider"
+                        android:layout_marginVertical="@dimen/small_margin"/>
+
+
+                    <TextView
+                        android:id="@+id/textViewHospitalDetailWebSite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_hospital_webSite"
+                        android:onClick="openWebSiteExternalPage"
+                        />
+                    <TextView
+                        android:id="@+id/textViewHospitalWebSite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:onClick="openWebSiteExternalPage"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider"
+                        android:layout_marginVertical="@dimen/small_margin"/>
+
+                    <TextView
+                        android:id="@+id/textViewHospitalDetailMail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_hospital_mail"
+                        android:onClick="openMailExternalPage"
+                        />
+                    <TextView
+                        android:id="@+id/textViewHospitalMail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:onClick="openMailExternalPage"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider"
+                        android:layout_marginVertical="@dimen/small_margin"/>
+
+                    <TextView
+                    android:id="@+id/textViewHospitalDetailDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_view_hospital_distance"
+                    />
+
+                    <TextView
+                        android:id="@+id/textViewHospitalDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider"
+                        android:layout_marginVertical="@dimen/small_margin"/>
+
+                    <TextView
+                        android:id="@+id/textViewHospitalDetailWaitGeneral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_view_hospital_wait_general"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewHospitalWaitGeneral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider"
+                        android:layout_marginVertical="@dimen/small_margin"/>
+
+                    <TextView
+                        android:id="@+id/textViewHospitalDetailWaitObs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_view_hospital_wait_obs"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewHospitalWaitObs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider"
+                        android:layout_marginVertical="@dimen/small_margin"/>
+
+                    <TextView
+                        android:id="@+id/textViewHospitalDetailWaitPed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_view_hospital_wait_ped"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewHospitalWaitPed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider"
+                        android:layout_marginVertical="@dimen/small_margin"/>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardViewHospitalDetailSwitch"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/cardViewMovieDetailMore"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="@dimen/medium_margin">
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardViewMovieDetailSwitch"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/cardViewMovieDetailMore"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="@dimen/medium_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/hButtonCheckIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/checkinButtonColor"
+                        android:padding="16dp"
+                        android:text="Check In"
+                        android:onClick="doCheckIn"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textViewHospitalDetailDistance" />
+
+
+                    <Button
+                        android:id="@+id/hButtonWay"
+                        android:onClick="doOnWay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/onWayButtonColor"
+                        android:padding="16dp"
+                        android:text="A Caminho"
+                        app:layout_constraintRight_toRightOf="@+id/hButtonCheckIn" />
+
+                    <Button
+                        android:id="@+id/hButtonCheckOut"
+                        android:onClick="doCheckOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:padding="16dp"
+                        android:text="Check Out"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="@+id/hButtonWay"
+                        app:layout_constraintTop_toBottomOf="@id/textViewHospitalDetailDistance" />
+
+                    <Button
+                        android:id="@+id/hButtonRefresh"
+                        android:onClick="refreshTimes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/refreshButtonColor"
+                        android:padding="16dp"
+                        android:text="Refresh"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="@+id/hButtonWay"
+                        app:layout_constraintTop_toBottomOf="@id/textViewHospitalDetailDistance" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>
