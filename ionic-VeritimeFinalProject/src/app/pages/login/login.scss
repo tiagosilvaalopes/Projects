@@ -1,0 +1,69 @@
+page-login {
+  .image-row {
+    @extend .margin-top-50;
+  }
+  #logo_img {
+    //alinhar a img no centro da coluna (e, consecutivamente, no centro do ecrã)
+    width: auto;
+    margin: auto;
+    display: block;
+  }
+
+  .login-content {
+    background-color: rgba(221, 221, 221, 0.507);
+  }
+
+  .login-box {
+    @extend .margin-top-150;
+    @extend .margin-bottom-1;
+    background-color: transparent;
+    .labels {
+      width: 10%;
+      color: rgba(34, 180, 119, 0.6);
+      font-size: 1.2em;
+    }
+  }
+  .submit-btn {
+    @extend .margin-top-20;
+    background-color: rgba(34, 180, 100, 0.76);
+    color: #ffffff;
+    font-size: 18px;
+    height: 64px;
+  }
+  .image {
+    margin: $home-logo-pos;
+    size: 100vh;
+  }
+
+  #login-image {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    height: 68px;
+    width: 212px;
+    margin: auto;
+    display: block;
+  }
+  #input-email {
+    margin-top: 30%;
+    margin-left: -1.5%;
+  }
+  #input-password {
+    margin-top: 5%;
+    margin-left: -1.5%;
+  }
+  .inputs {
+    background-color: transparent;
+  }
+
+  .inputs-margin {
+    margin-left: -5%;
+    background-color: transparent;
+    font-size: 18px;
+  }
+  .labels {
+    margin-left: 0%;
+  }
+  .signup-col {
+    margin-top: 15%;
+  }
+}

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'FINALIZAR_ATENDIMENTO' | translate }}</ion-title>
+    <ion-buttons end>
+      <button ion-button slot="end" (click)="closeModal()" class="close-button" icon-only fill="clear" large>
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="modal-content">
+  <form #form="ngForm" (ngSubmit)="checkout(form)" #registerForm="ngForm">
+    <ion-item>
+      <ion-label>{{ 'ESTADO_FINAL' | translate }}</ion-label>
+      <ion-select name="taskFinalStatus" ngModel required slot="end" placeholder="{{ 'ESTADO' | translate }}">
+        <ion-option value="finalizado">{{ 'FINALIZADO' | translate }}</ion-option>
+        <ion-option value="naoTerminado">{{ 'NAO_TERMINADO' | translate }}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item no-lines>
+      <ion-label>{{ 'OBSERVACOES' | translate }}</ion-label>
+    </ion-item>
+    <ion-item no-lines class="textArea">
+      <ion-textarea name="obs" ngModel></ion-textarea>
+    </ion-item>
+
+    <button type="submit" full [disabled]="!registerForm.form.valid" class="button">
+      Checkout
+    </button>
+  </form>
+</ion-content>

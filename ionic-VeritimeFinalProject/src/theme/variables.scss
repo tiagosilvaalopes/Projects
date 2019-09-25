@@ -1,0 +1,139 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: '../assets/fonts';
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+@import 'ionic.globals';
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary: #33fa65,
+  secondary: #32db64,
+  danger: #f53d3d,
+  light: #fdfdfdbb,
+  dark: #222,
+  btn_color: rgba(34, 180, 119, 0.6),
+  background_color: rgba(221, 221, 221, 0.507),
+);
+
+//:::MARGINS:::
+//MARGINS AND PADDINGS GO HERE - USE THEM ELSEWHERE AND PLAGUES WILL FALL UPON YOU
+//All margin and padding values are available from -250 to 300
+
+$pixels: 300;
+
+@mixin margin-list {
+  @for $i from -250 through $pixels {
+    .margin-top-#{$i} {
+      margin-top: #{$i}px !important;
+    }
+
+    .margin-right-#{$i} {
+      margin-right: #{$i}px !important;
+    }
+
+    .margin-bottom-#{$i} {
+      margin-bottom: #{$i}px !important;
+    }
+
+    .margin-left-#{$i} {
+      margin-left: #{$i}px !important;
+    }
+
+    .margin-#{$i} {
+      margin: #{$i}px !important;
+    }
+    .padding-top-#{$i} {
+      padding-top: #{$i}px !important;
+    }
+
+    .padding-right-#{$i} {
+      padding-right: #{$i}px !important;
+    }
+
+    .padding-bottom-#{$i} {
+      padding-bottom: #{$i}px !important;
+    }
+
+    .padding-left-#{$i} {
+      padding-left: #{$i}px !important;
+    }
+
+    .padding-#{$i} {
+      padding: #{$i}px !important;
+    }
+  }
+}
+
+@include margin-list;
+
+$toolbar-end-button-pos: 10px 5px 10px 5px;
+$home-logo-pos: 10px 0px 0px 0px;
+
+//:::END OF MARGINS AND PADDINGS:::
+
+.standard-btn {
+  color: black;
+  background-color: #5ffa86;
+  width: 40vw;
+  height: 70px;
+  margin: auto;
+}
+
+.background {
+  color: lightgray;
+}
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import 'ionic.theme.default';
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import 'ionic.ionicons';
+
+// Fonts
+// --------------------------------------------------
+
+@import 'roboto';
+@import 'noto-sans';

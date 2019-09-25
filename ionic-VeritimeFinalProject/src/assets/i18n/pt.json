@@ -1,0 +1,21 @@
+{
+  "IDIOMA": "Idioma",
+  "EM_ANDAMENTO": "Em Andamento",
+  "EM_ESPERA": "Em Espera",
+  "EM_ATRASO": "Em Atraso",
+  "FINALIZADO": "Finalizado",
+  "NAO_TERMINADO": "Não terminado",
+  "LOCALIZACAO": "Localização",
+  "NOVA_TAREFA": "Nova Tarefa",
+  "LISTA_DE_TAREFAS": "Lista de Tarefas",
+  "TELEFONAR": "Telefonar",
+  "DIRIGIR": "Dirigir",
+  "ERRO_LOGIN": "Erro no Login",
+  "NENHUM_DETALHE_INCLUIDO": "Nenhum detalhe incluído",
+  "FINALIZAR_ATENDIMENTO": "Terminar Atendimento",
+  "ESTADO_FINAL": "Estado Final",
+  "ESTADO": "Estado",
+  "OBSERVACOES": "Observações(Opcional)",
+  "CHECKOUT_SUCCESS": "Sucesso no checkout",
+  "CHECKIN_SUCCESS": "Sucesso no checkin"
+}

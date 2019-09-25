@@ -1,0 +1,63 @@
+<ion-header class="background">
+  <ion-navbar>
+    <ion-row class="logo-row">
+      <ion-col width-32 class="background">
+        <img id="logo_img" src="../../assets/imgs/logo_veritime.png" />
+      </ion-col>
+
+      <ion-buttons end class="refresh-btn">
+        <button ion-button icon-only fill="clear" large class="sync" (click)="loadAll()">
+          <!--Botão que chama sync()-->
+          <ion-icon name="sync"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-row>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="homePageContent" padding>
+  <ion-item>
+    <ion-label translate>{{ 'IDIOMA' | translate }}</ion-label>
+    <ion-select [(ngModel)]="language" (ionChange)="switchLanguage()">
+      <ion-option value="pt">Português</ion-option>
+      <ion-option value="es">Español</ion-option>
+      <ion-option value="en">English</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <!--LABELS START HERE-->
+  <button ion-button class="label_btn" (click)="listOnGoing()" padding>
+    <ion-item class="ongoing_label">
+      <ion-icon class="icon_ongoing" name="checkmark-circle-outline" item-start></ion-icon>
+
+      <ion-text class="labels_text">{{ 'EM_ANDAMENTO' | translate }}</ion-text>
+
+      <ion-badge class="badge_ongoing" item-end>{{ getTaskByStatus(taskType.ON_GOING).length }}</ion-badge>
+    </ion-item>
+  </button>
+
+  <button ion-button class="label_btn" (click)="listWaiting()">
+    <ion-item class="waiting_label">
+      <ion-icon class="icon_waiting" name="time" item-start></ion-icon>
+      <ion-text class="labels_text"> {{ 'EM_ESPERA' | translate }}</ion-text>
+      <ion-badge class="badge_waiting" item-end>{{ getTaskByStatus(taskType.WAITING).length }}</ion-badge>
+    </ion-item>
+  </button>
+
+  <button ion-button class="label_btn" (click)="listDue()" padding>
+    <ion-item class="due_label">
+      <ion-icon class="icon_due" name="alert" item-start></ion-icon>
+      <ion-text class="labels_text">{{ 'EM_ATRASO' | translate }}</ion-text>
+      <ion-badge class="badge_due" item-end>{{ getTaskByStatus(taskType.DUE).length }}</ion-badge>
+    </ion-item>
+  </button>
+
+  <button ion-button class="label_btn" (click)="listDone()" padding>
+    <ion-item class="done_label">
+      <ion-icon class="icon_done" name="checkmark-circle" item-start></ion-icon>
+      <ion-text class="labels_text">{{ 'FINALIZADO' | translate }}</ion-text>
+      <ion-badge class="badge_done" item-end>{{ getTaskByStatus(taskType.DONE).length }}</ion-badge>
+    </ion-item>
+  </button>
+  <!--END OF LABELS-->
+</ion-content>

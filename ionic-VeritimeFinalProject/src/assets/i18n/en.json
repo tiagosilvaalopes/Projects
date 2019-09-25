@@ -1,0 +1,21 @@
+{
+  "IDIOMA": "Language",
+  "EM_ANDAMENTO": "Ongoing",
+  "EM_ESPERA": "Awaiting",
+  "EM_ATRASO": "Delayed",
+  "FINALIZADO": "Finished",
+  "NAO_TERMINADO": "Not Finished",
+  "LOCALIZACAO": "Location",
+  "NOVA_TAREFA": "New Task",
+  "LISTA_DE_TAREFAS": "Task List",
+  "TELEFONAR": "Call",
+  "DIRIGIR": "Go",
+  "ERRO_LOGIN": "Login Error",
+  "NENHUM_DETALHE_INCLUIDO": "No details were included",
+  "FINALIZAR_ATENDIMENTO": "Finish Task",
+  "ESTADO_FINAL": "Final Task State",
+  "ESTADO": "State",
+  "OBSERVACOES": "Checkout details(Optional)",
+  "CHECKOUT_SUCCESS": "Successful checkout",
+  "CHECKIN_SUCCESS": "Successful checkin"
+}

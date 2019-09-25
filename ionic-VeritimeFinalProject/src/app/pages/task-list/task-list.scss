@@ -1,0 +1,35 @@
+page-taskList {
+  .taskList-content {
+    background-color: rgba(221, 221, 221, 0.507);
+    padding: 0px !important;
+  }
+
+  .label {
+    margin: 0;
+  }
+
+  .item-inner {
+    padding: 0px !important;
+  }
+
+  .cardItem {
+    padding: 0px !important;
+    border-radius: 10px !important;
+  }
+
+  .taskListCard {
+    padding: 0px !important;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0px !important;
+    .cardTitle {
+      @extend .margin-left-15;
+      font-weight: bold;
+    }
+    .Card-Content {
+      @extend .margin-left-15;
+      font-size: 19px;
+      background-color: transparent;
+    }
+  }
+}

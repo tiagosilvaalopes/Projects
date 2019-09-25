@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ 'LISTA_DE_TAREFAS' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="taskList-content" padding>
+  <ion-list *ngFor="let t of tasks">
+    <ion-item class="cardItem">
+      <ion-card (click)="openTask(t.idatendimento)" ion-item class="taskListCard">
+        <ion-card-title class="cardTitle" text-wrap>{{ t.titulo }}</ion-card-title>
+        <ion-card-subtitle text-wrap>{{ t.nome_cliente }}</ion-card-subtitle>
+        <ion-card-content class="Card-Content" text-wrap>
+          {{ t.data_hora_formatada }} <br />
+          A {{ t.distance }} km
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>

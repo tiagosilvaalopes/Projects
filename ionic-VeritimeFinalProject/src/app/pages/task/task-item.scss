@@ -1,0 +1,66 @@
+ion-grid {
+  height: 50%;
+
+  ion-row {
+    height: 30%;
+  }
+}
+
+.content {
+  background-color: rgba(221, 221, 221, 0.507);
+  padding: 15px;
+}
+
+.default_label {
+  min-height: 75px;
+  max-height: 100px;
+  padding: 0px !important;
+  min-width: 90%;
+  max-width: 90%;
+}
+
+.labels_text {
+  font-size: 22px;
+  background-color: transparent;
+  margin-top: 13px;
+  color: white;
+}
+.card {
+  margin-top: 20px;
+}
+.item_info {
+  @extend .info_margin;
+  @extend .default_label;
+}
+
+.info_margin {
+  @extend .margin-left-15;
+  @extend .margin-right-15;
+  @extend .margin-top-15;
+}
+
+.label_icon {
+  min-height: 75px;
+  max-height: 75px;
+  margin: 0px !important;
+  @extend .margin-left-15;
+  min-width: 100%;
+  max-width: 100%;
+  line-height: 75px;
+}
+
+.button {
+  background-color: rgba(34, 180, 100, 0.76);
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+
+.badge {
+  font-size: 25px;
+  color: black;
+  width: 70px;
+  height: 50px;
+  line-height: 50px;
+}

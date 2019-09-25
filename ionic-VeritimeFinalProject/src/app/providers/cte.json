@@ -1,0 +1,13 @@
+{
+  "cte": {
+    "DEBUG": false,
+    "VERSAO": 283,
+    "URL_API": "http://veritime.com.br/veritime3/api",
+    "GCM_SENDER_ID": 1054711205084,
+    "TIMEOUT_HTTP": 30000,
+    "TIMEOUT_GEOLOCALIZACAO": 10000,
+    "TIMEOUT_GEOLOCALIZACAO_BACKGROUND": 120000,
+    "TIMEOUT_SINC": 15000,
+    "TAMANHO_FILA": 10
+  }
+}
